@@ -1,0 +1,79 @@
+
+<!-- ----- CODIGO REALIZADO POR ROBERTO CORDOVA  ------
+-----  INGRESA A MI WEB WWW.ROBERTOCANJURA.COM
+-----  DONACIONES PARA SEGUIR CON PROYECTOS LIBRES  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE PRESTAMOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+<div class="header bg-white shadow-lg">
+    <div class="flex justify-between items-center py-4 px-8">
+        <!-- Iconos en el lado izquierdo -->
+        <div class="flex items-center space-x-8">
+            <a href="https://github.com/Rober093" target="_blank" class="  text-purple-600 hover:text-purple-800"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com/jose.cajura.391/" target="_blank" class=" hide-on-mobile text-purple-600 hover:text-purple-800"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/roberto-cordova-0a2a04187" target="_blank" class=" hide-on-mobile text-purple-600 hover:text-purple-800"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <!-- Botones en el lado derecho -->
+        <div class="flex items-center space-x-4">
+            <button class="lang  custom-button bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded-lg" onclick="window.open('https://www.robertocanjura.com/', '_blank')">Home</button>
+            <button class="lang hide-on-mobile custom-button bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded-lg" onclick="window.open('https://www.robertocanjura.com/', '_blank')" >About me</button>
+            <button class="lang custom-button bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded-lg" onclick="window.open('https://www.robertocanjura.com/contact.html' , '_blank')">Contact Us</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mx-auto mt-24 p-4">
+    <h1 class="text-2xl font-semibold mb-4">CALCULADORA DE PRÉSTAMOS</h1>
+    <div class="grid grid-cols-2 gap-4">
+        <div>
+            <label class="block font-medium mb-1" for="montoPrestamo">MONTO DEL PRÉSTAMO</label>
+            <input class="w-full border rounded px-3 py-2 validar-campo" type="number" id="montoPrestamo" placeholder="Ingrese el monto del préstamo">
+        </div>
+        <div>
+            <label class="block font-medium mb-1" for="tasaInteres">TASA DE INTERÉS ANUAL (%)</label>
+            <input class="w-full border rounded px-3 py-2 validar-campo" type="number" id="tasaInteres" placeholder="Ingrese la tasa de interés anual">
+        </div>
+        <div>
+            <label class="block font-medium mb-1" for="plazoEnAnios">PLAZO EN AÑOS</label>
+            <input class="w-full border rounded px-3 py-2 validar-campo" type="number" id="plazoEnAnios" placeholder="Ingrese el plazo en años">
+        </div>
+    </div>
+    <div class="flex mt-4">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2" onclick="generarTablaAmortizacion()">GENERAR CUOTAS</button>
+        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="borrarDatos()">BORRAR</button>
+        <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded ml-2" onclick="descargarPDF()">DESCARGAR PDF</button>
+    </div>
+    <div id="tablaAmortizacion" class="mt-8"></div>
+
+</div>
+
+
+<footer class="footer mt-auto">
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/roberto-cordova-0a2a04187" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Rober093" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/jose.cajura.391/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:rober_cordova93@hotmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-text">© Designed by Roberto Córdova</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

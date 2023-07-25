@@ -1,0 +1,43 @@
+
+/* ----- CODIGO REALIZADO POR ROBERTO CORDOVA  ------
+  -----  INGRESA A MI WEB WWW.ROBERTOCANJURA.COM
+  -----  DONACIONES PARA SEGUIR CON PROYECTOS LIBRES
+
+*/
+
+
+.footer {
+    background-color: #6E07F3;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-text {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+}
